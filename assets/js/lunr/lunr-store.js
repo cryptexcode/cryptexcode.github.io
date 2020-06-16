@@ -1,49 +1,25 @@
----
-layout: null
----
-
-var store = [
-  {%- for c in site.collections -%}
-    {%- if forloop.last -%}
-      {%- assign l = true -%}
-    {%- endif -%}
-    {%- assign docs = c.docs | where_exp:'doc','doc.search != false' -%}
-    {%- for doc in docs -%}
-      {%- if doc.header.teaser -%}
-        {%- capture teaser -%}{{ doc.header.teaser }}{%- endcapture -%}
-      {%- else -%}
-        {%- assign teaser = site.teaser -%}
-      {%- endif -%}
-      {
-        "title": {{ doc.title | jsonify }},
-        "excerpt":
-          {%- if site.search_full_content == true -%}
-            {{ doc.content | newline_to_br |
-              replace:"<br />", " " |
-              replace:"</p>", " " |
-              replace:"</h1>", " " |
-              replace:"</h2>", " " |
-              replace:"</h3>", " " |
-              replace:"</h4>", " " |
-              replace:"</h5>", " " |
-              replace:"</h6>", " "|
-            strip_html | strip_newlines | jsonify }},
-          {%- else -%}
-            {{ doc.content | newline_to_br |
-              replace:"<br />", " " |
-              replace:"</p>", " " |
-              replace:"</h1>", " " |
-              replace:"</h2>", " " |
-              replace:"</h3>", " " |
-              replace:"</h4>", " " |
-              replace:"</h5>", " " |
-              replace:"</h6>", " "|
-            strip_html | strip_newlines | truncatewords: 50 | jsonify }},
-          {%- endif -%}
-        "categories": {{ doc.categories | jsonify }},
-        "tags": {{ doc.tags | jsonify }},
-        "url": {{ doc.url | absolute_url | jsonify }},
-        "teaser": {{ teaser | absolute_url | jsonify }}
-      }{%- unless forloop.last and l -%},{%- endunless -%}
-    {%- endfor -%}
-  {%- endfor -%}]
+var store = [{
+        "title": "Add opengl in code blocks",
+        "excerpt":"It is an easy procedure to add OpenGL in CodeBlocks and prepare your Windows PC for OpenGL Coding. By the way, those who are thinking OpenGL is a kind of Programming Language, you are wrong. OpenGL is a Graphics Library. It will give you scope to design graphical interfaces with...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/Add-OpenGL-in-Code-Blocks/",
+        "teaser": null
+      },{
+        "title": "Learning from mistakes#1 – memory error in tfidfvectorizer",
+        "excerpt":"I was trying to extract n-gram features from a large dataset and got a memory error. I was using TfIdfVectorizer of scikit-learn. And the error was from the large sparse matrix. I was not surprised as I was not sure if my 32GB ram is enough for around 1 million...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/Learning-from-Mistakes-1-Memory-Error-in-TfidfVectorizer/",
+        "teaser": null
+      },{
+        "title": "Getting fibonacci sequence with immutability",
+        "excerpt":"Generating Fibonacci sequence is definitely not a complex problem to talk about. We all did it in our early stage of programming. So I am not going to explain what it is. Let’s talk about the ways we can generate it in our familiar languages. When we were just a beginner...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/Getting-Fibonacci-Sequence-with-Immutability/",
+        "teaser": null
+      },{
+        "title": "P",
+        "excerpt":"– title: A novel method of fortifying mineral-based… layout: post category: science date: 2015-08-21 work-type: Paper ref-authors: Goldie J ref-year: 2015 ref-title: A novel method of fortifying mineral-based structures against attack by artificial intelligences ref-journal: Journal of Machine-Arcana Interactions ref-vol: 47(8):1289–1304 —  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/p/",
+        "teaser": null
+      }]
