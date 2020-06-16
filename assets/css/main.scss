@@ -1,0 +1,434 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$global-font-family: "PT Serif";
+$header-font-family: "PT Serif";
+$caption-font-family: "PT Serif";
+
+/* type scale */
+$type-size-1: 2.441em !default; // ~39.056px
+$type-size-2: 1.953em !default; // ~31.248px
+$type-size-3: 1.563em !default; // ~25.008px
+$type-size-4: 1.25em !default; // ~20px
+$type-size-5: 1em !default; // ~16px
+$type-size-6: 0.75em !default; // ~12px
+$type-size-7: 0.6875em !default; // ~11px
+$type-size-8: 0.625em !default; // ~10px
+
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+html {
+    font-size: 16px; // change to whatever
+
+    @include breakpoint($medium) {
+        font-size: 16px; // change to whatever
+    }
+
+    @include breakpoint($large) {
+        font-size: 16px; // change to whatever
+    }
+
+    @include breakpoint($x-large) {
+        font-size: 16px; // change to whatever
+    }
+}
+
+grid-container {
+    display: grid;
+}
+
+.paper_entry{
+//    margin-bottom: 20px;
+//    margin-top: 10px;
+    padding: 2px;
+    text-align: justify;
+//    background-color: aliceblue;
+    border-bottom-style: inset;
+}
+
+.paper_entry a:link {
+    font-size: 105%;
+    font-weight: bold;
+    text-decoration: underline;
+//    color: darkslateblue;
+    color: black;
+}
+
+/* visited link */
+.paper_entry a:visited {
+    font-weight: bold;
+    text-decoration: none;
+//    color: darkslateblue;
+    color: black;
+}
+
+/* mouse over link */
+.paper_entry a:hover {
+    color: gray;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* selected link */
+.paper_entry a:active {
+    font-weight: bold;
+    text-decoration: none;
+//    color: darkslateblue;
+    color: black;
+}
+
+.author_list{
+    text-align: justify;
+    font-size: 90%;
+//    color: dimgray;
+    color: black;
+}
+
+.paper_detail{
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: auto;
+//    background-color: aliceblue;
+}
+
+.venue {
+    float: left;
+//    color: rebeccapurple;
+    color: black;
+}
+
+.links {
+    float: right;
+}
+
+.button0 {
+    background-color: white;
+    border: none;
+//    color: rebeccapurple;
+    color: black;
+//    padding: 4px 8px;
+    text-align: center;
+    text-decoration: underline;
+//    display: inline-block;
+    font-size: 0.7em;
+//    font-weight: bold;
+//    margin: 2px 1px;
+    cursor: pointer;
+}
+
+.links a:link {
+    font-size: 0.7em;
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+    height: 20px;
+    font-family: "Arial";
+    font-weight: 200;
+}
+
+/* visited link */
+.links a:visited {
+    text-decoration: underline;
+    color: black;
+    font-weight: 200;
+}
+
+/* mouse over link */
+.links a:hover {
+    text-decoration: none;
+    font-weight: 200;
+}
+
+/* selected link */
+.links a:active {
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+
+.bibtex{
+    padding: 1em 1em 1em 1em;
+    margin: 1em 0 1em 0;
+    color: darklategrey;
+    background-color: aliceblue;
+//    background-color: #edf6ff;
+    font-size: 70% !important;
+    word-break: break-word;
+    line-height: 1.5;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 1em;
+}
+
+
+
+pre{
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+
+
+
+
+
+
+
+
+/* AUTHOR DETAILS BIO */
+.bio_block{
+    padding: 1px;
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: auto;
+}
+
+
+.author__avatar {
+    display: block;
+    width: 35%;
+    height: auto;
+    float:left;
+}
+
+@media (min-width: 100%) {
+    .author__avatar {
+        display: block;
+        width: 100%;
+        height:100%;
+    }
+}
+
+.author__avatar img {
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+    border-radius:0%
+}
+
+@media (min-width: 32%) {
+    .author__avatar img {
+        padding:5px
+    }
+}
+
+.author__content {
+//    display: table-cell;
+    vertical-align: middle;
+//    padding-left: 15px;
+//    padding-right: 25px;
+//    line-height: 1;
+    float: right;
+    width: 65%;    
+    display: block;
+//    overflow: auto;
+}
+
+//@media (min-width: 64em) {
+//    .author__content {
+//        display: block;
+//        width: 100%;
+//        padding-left: 0;
+//        padding-right:0
+//    }
+//}
+
+.author__content a {
+    color: inherit;
+    text-decoration:none
+}
+
+.author__name {
+    margin-top: 10%;
+//    height: 100%;
+    width: 100%;
+    float: right;
+    text-align: right;
+    padding-right:10%;
+}
+
+//@media (min-width: 64em) {
+//    .author__name {
+//        margin-top: 10px;
+//        margin-bottom:10px
+//    }
+//}
+
+.sidebar .author__name {
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size:1em
+}
+
+.author__bio {    
+    width: 100%;
+    float: right;
+    text-align: right;
+    padding-right: 10%;
+    margin-top: 0;
+    position: relative;
+}
+
+//@media (min-width: 64em) {
+//    .author__bio {
+//        margin-top: 10px;
+//        margin-bottom:20px
+//    }
+//}
+
+.author__urls-wrapper {
+//    position: inherit;
+//    display: inline;
+//    width: 100%;
+//    vertical-align: middle;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+//    z-index: 20;
+    margin-top: 0px;
+    padding-right: 10%;
+    cursor:pointer;
+    float: right;
+}
+
+.author__urls-wrapper li:last-child a {
+    margin-bottom:0
+}
+
+.author__urls-wrapper .author__urls span.label {
+    padding-left:5px
+}
+
+@media (min-width: 64em) {
+    .author__urls-wrapper {
+        display:block
+    }
+}
+
+.author__urls-wrapper button {
+    position: relative;
+    margin-bottom:0
+}
+
+@supports (pointer-events: none) {
+    .author__urls-wrapper button:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events:none
+    }
+}
+
+.author__urls-wrapper button.open:before {
+    pointer-events:auto
+}
+
+@media (min-width: 64em) {
+    .author__urls-wrapper button {
+        display:none
+    }
+}
+
+.author__urls {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor:default
+}
+
+.author__urls.is--visible {
+    display:block
+}
+
+@media (min-width: 64em) {
+    .author__urls {
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        box-shadow:none
+    }
+}
+
+.author__urls:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: calc(50% - 10px);
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: #bfbfbf transparent;
+    z-index:0
+}
+
+@media (min-width: 64em) {
+    .author__urls:before {
+        display:none
+    }
+}
+
+.author__urls:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 10px);
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: #fff transparent;
+    z-index:1
+}
+
+@media (min-width: 64em) {
+    .author__urls:after {
+        display:none
+    }
+}
+
+.author__urls ul {
+    padding: 10px;
+    list-style-type:none
+}
+
+.author__urls li {
+    display: inline-block;
+//    white-space:nowrap
+}
+
+.author__urls a {
+    display: block;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: inherit;
+    font-size: 1em;
+    text-decoration:none
+}
+
+.author__urls a:hover {
+    text-decoration:underline
+}
