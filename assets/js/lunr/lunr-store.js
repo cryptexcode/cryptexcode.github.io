@@ -16,10 +16,4 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/Getting-Fibonacci-Sequence-with-Immutability/",
         "teaser": null
-      },{
-        "title": "P",
-        "excerpt":"– title: A novel method of fortifying mineral-based… layout: post category: science date: 2015-08-21 work-type: Paper ref-authors: Goldie J ref-year: 2015 ref-title: A novel method of fortifying mineral-based structures against attack by artificial intelligences ref-journal: Journal of Machine-Arcana Interactions ref-vol: 47(8):1289–1304 —  ","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/p/",
-        "teaser": null
       }]
