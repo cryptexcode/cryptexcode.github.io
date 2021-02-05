@@ -34,6 +34,9 @@
 <loc>http://localhost:4000/misc/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/podcast</loc>
+</url>
+<url>
 <loc>http://localhost:4000/publications/</loc>
 </url>
 <url>
