@@ -12,5 +12,7 @@ main:
 #     url: /collection-archive/
 #   - title: "Sitemap"
 #     url: /sitemap/
+    - title: "Podcast"
+      url: /podcast
     - title: "Misc"
       url: /misc
