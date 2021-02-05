@@ -432,3 +432,18 @@ pre{
 .author__urls a:hover {
     text-decoration:underline
 }
+
+
+.column {
+  float: left;
+  width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
