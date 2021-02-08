@@ -13,6 +13,6 @@ main:
 #   - title: "Sitemap"
 #     url: /sitemap/
     - title: "Podcast"
-      url: /podcast
+      url: /podcast.html
     - title: "Misc"
       url: /misc
