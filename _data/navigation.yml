@@ -8,11 +8,11 @@ main:
       url: /assets/files/sudipta-kar-resume.pdf
     - title: "Blog"
       url: /blogs
+    - title: "Podcast"
+      url: /podcast
+    - title: "Misc"
+      url: /misc
 #   - title: "Sample Collections"
 #     url: /collection-archive/
 #   - title: "Sitemap"
 #     url: /sitemap/
-    - title: "Podcast"
-      url: /podcast.html
-    - title: "Misc"
-      url: /misc
