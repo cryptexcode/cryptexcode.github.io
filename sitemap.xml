@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/Add-OpenGL-in-Code-Blocks/</loc>
-<lastmod>2012-09-20T00:00:00-05:00</lastmod>
+<lastmod>2012-09-20T00:00:00-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/Learning-from-Mistakes-1-Memory-Error-in-TfidfVectorizer/</loc>
-<lastmod>2016-11-25T00:00:00-06:00</lastmod>
+<lastmod>2016-11-25T00:00:00-08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/Getting-Fibonacci-Sequence-with-Immutability/</loc>
-<lastmod>2016-12-16T00:00:00-06:00</lastmod>
+<lastmod>2016-12-16T00:00:00-08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/404/</loc>
@@ -41,14 +41,14 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/files/668_EMNLP_2020_multiview.pdf</loc>
-<lastmod>2020-10-26T12:55:46-05:00</lastmod>
+<lastmod>2020-10-26T10:55:46-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/files/kar_thesis.pdf</loc>
-<lastmod>2020-06-18T19:53:37-05:00</lastmod>
+<lastmod>2020-06-18T17:53:37-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/files/sudipta-kar-resume.pdf</loc>
-<lastmod>2020-10-22T17:53:24-05:00</lastmod>
+<lastmod>2020-10-22T15:53:24-07:00</lastmod>
 </url>
 </urlset>
