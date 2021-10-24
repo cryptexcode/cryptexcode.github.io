@@ -24,7 +24,8 @@ permalink: /concerts
     - Alexi Laiho looked very sick. It was very sad seeing him like that.
 * __Cradle of Filth__ - Apr 17, 2019
 * __Slipknot, Volbeat, Gojira, Behemoth__ - Sep 8, 2019
-
+* __Megadeth, Lamb of God, Trivium, Hatebreed__ - Sep 5, 2021
+* __Green Day__ - Sep 6, 2021
 
 
 * _Several shows are not in this list because I forgot the details_ :( .
