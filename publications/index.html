@@ -381,6 +381,94 @@ In this dissertation, we tackle the challenge of automatically characterizing st
 <section class="paper_entry">
     <div class="text-justify">
         
+        <a href="https://aclanthology.org/2021.ranlp-main.53.pdf" target="_blank">Syntax and Themes: How Context Free Grammar Rules and Semantic Word Association Influence Book Success</a>
+        
+    </div>
+
+    
+    <div class="author_list"> Henry Gorelick, Biddut Sarker Bijoy, Syeda Jannatus Saba, <b>Sudipta Kar</b>, Md Saiful Islam, Mohammad Ruhul Amin </div>
+    
+
+    <section class="paper_detail">
+        <div class="venue">
+            
+            <img src="../assets/images/icon_paper.png" width="20vw"  />RANLP 2021 
+            
+        </div>
+
+        <div class="links">
+            <!--            <div class="text-justify"> -->
+
+            
+            
+            
+            <button class="button0"  onclick="hide_show_bibtex('abstract', 
+                                              'syntaxstyle')">[Abstract]</button>
+            
+
+            
+            <button class="button0"  onclick="hide_show_bibtex('bibtex','syntaxstyle')">[Bibtex]</button>
+            
+
+            
+            
+        </div>
+        <div class="links">
+            
+            <div class="bibtex" id="bibtexsyntaxstyle" style="display: none">
+                <pre>@inproceedingsgorelick-etal-2021-syntax,
+    title = "Syntax and Themes: How Context Free Grammar Rules and Semantic Word Association Influence Book Success",
+    author = "Gorelick, Henry  and
+      Bijoy, Biddut Sarker  and
+      Jannatus Saba, Syeda  and
+      Kar, Sudipta  and
+      Islam, Md Saiful  and
+      Amin, Mohammad Ruhul",
+    booktitle = "Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2021)",
+    month = sep,
+    year = "2021",
+    address = "Held Online",
+    publisher = "INCOMA Ltd.",
+    url = "https://aclanthology.org/2021.ranlp-main.53",
+    pages = "463–474",
+    abstract = "In this paper, we attempt to improve upon the state-of-the-art in predicting a novel’s success by modeling the lexical semantic relationships of its contents. We created the largest dataset used in such a project containing lexical data from 17,962 books from Project Gutenberg. We utilized domain specific feature reduction techniques to implement the most accurate models to date for predicting book success, with our best model achieving an average accuracy of 94.0%. By analyzing the model parameters, we extracted the successful semantic relationships from books of 12 different genres. We finally mapped those semantic relations to a set of themes, as defined in Roget’s Thesaurus and discovered the themes that successful books of a given genre prioritize. At the end of the paper, we further showed that our model demonstrate similar performance for book success prediction even when Goodreads rating was used instead of download count to measure success."</pre>
+            </div>
+            <div class="bibtex" id="abstractsyntaxstyle" style="display: none">
+                <pre>In this paper, we attempt to improve upon the state-of-the-art in predicting a novel’s success by modeling the lexical semantic relationships of its contents. We created the largest dataset used in such a project containing lexical data from 17,962 books from Project Gutenberg. We utilized domain specific feature reduction techniques to implement the most accurate models to date for predicting book success, with our best model achieving an average accuracy of 94.0%. By analyzing the model parameters, we extracted the successful semantic relationships from books of 12 different genres. We finally mapped those semantic relations to a set of themes, as defined in Roget’s Thesaurus and discovered the themes that successful books of a given genre prioritize. At the end of the paper, we further showed that our model demonstrate similar performance for book success prediction even when Goodreads rating was used instead of download count to measure success.</pre>
+            </div>
+            
+        </div>
+
+
+    </section>
+
+</section></li>
+<li><script type="text/javascript">
+    function hide_show_bibtex(data_type, data_key) {
+        if(data_type.localeCompare("bibtex")){
+            var x = document.getElementById(data_type + data_key);
+            if (x.style.display === "none") {
+                document.getElementById("bibtex" + data_key).style.display = "none";
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        else if(data_type.localeCompare("abstract")){
+            var x = document.getElementById(data_type + data_key);
+            if (x.style.display === "none") {
+                document.getElementById("abstract" + data_key).style.display = "none";
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }   
+    }
+</script>
+
+<section class="paper_entry">
+    <div class="text-justify">
+        
         <a href="/assets/files/sentnob_emnlp_2021.pdf" target="_blank">SentNoB: A Dataset for Analysing Sentiment on Noisy Bangla Texts</a>
         
     </div>
